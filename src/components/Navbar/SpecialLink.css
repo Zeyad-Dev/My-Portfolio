@@ -1,0 +1,17 @@
+a {
+  display: block;
+  font-size: 18px;
+  color: var(--fff);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--text-main-color);
+}
+a:hover::before {
+  width: 100%;
+}
+a.active {
+  color: var(--text-main-color);
+}

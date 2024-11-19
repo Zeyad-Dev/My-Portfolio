@@ -1,0 +1,31 @@
+/* HTML: <div class="loader"></div> */
+.main-loading {
+  background-color: var(--background-color1);
+  height: calc(100vh - 90px);
+  display: grid;
+  place-items: center;
+}
+@media (max-width: 767px) {
+  .main-loading {
+    height: calc(100vh - 80px);
+  }
+}
+.loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 30px;
+  padding-bottom: 8px;
+  background: linear-gradient(var(--text-main-color) 0 0) 0 100%/0% 3px
+    no-repeat;
+  animation: l2 2s linear infinite;
+}
+.loader:before {
+  content: "Loading...";
+  color: var(--text-main-color);
+}
+@keyframes l2 {
+  to {
+    background-size: 100% 3px;
+  }
+}

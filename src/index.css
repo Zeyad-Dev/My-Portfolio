@@ -1,0 +1,78 @@
+:root {
+  --background-color1: #0a192f;
+  --background-color2: #364250;
+  --text-main-color: #48b09e;
+  --text-main-color2: #48b09e;
+  --heading-color-primary: #ccd6f6;
+  --heading-color-secondary: #8892b0;
+  --paragraph-color: #4c5a74;
+  --fff: #fff;
+  --fff2: #fff;
+  --ddd: #ddd;
+  --icon: #fec006;
+  --hover-color: #000;
+  --animation-mode-color: #0a192f;
+  --body-color: #0a192f;
+}
+:root.light {
+  --background-color1: #fff;
+  --background-color2: #eee;
+  --text-main-color: #37afe1;
+  --text-main-color2: #37afe1;
+  --heading-color-primary: #37afe1;
+  --heading-color-secondary: #4a628a;
+  --paragraph-color: #4c5a74;
+  --fff: #000;
+  --fff2: #fff;
+  --ddd: #000;
+  --hover-color: #000;
+  --icon: #0a192f;
+  --animation-mode-color: #fff;
+  --body-color: #fff;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--body-color);
+}
+a {
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

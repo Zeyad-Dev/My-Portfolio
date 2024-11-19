@@ -1,0 +1,146 @@
+.contact {
+  height: calc(100vh - 90px);
+  background-color: var(--background-color1);
+  padding-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .contact {
+    height: auto;
+  }
+}
+.contact h2 {
+  margin: 0;
+}
+
+.contact .container > h2 {
+  color: var(--heading-color-primary);
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contact .container > div {
+  background-color: var(--fff);
+  display: flex;
+}
+@media (max-width: 767px) {
+  .contact .container > div {
+    flex-direction: column;
+  }
+}
+.contact .container > div > div {
+  padding: 20px;
+}
+.contact .container > div > div > h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.contact .container > div .send-message {
+  background-color: var(--background-color2);
+  width: 60%;
+}
+@media (max-width: 767px) {
+  .contact .container > div .send-message {
+    width: 100%;
+  }
+}
+.contact .container > div > .send-message > h2 {
+  color: var(--text-main-color);
+}
+
+.contact .container > div .send-message div {
+  position: relative;
+  margin-bottom: 25px;
+}
+.contact .container > div .send-message div input {
+  background-color: transparent;
+  border: 1px solid var(--ddd);
+  outline: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  width: 100%;
+  color: var(--fff);
+}
+.contact .container > div .send-message div label {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%);
+  color: var(--fff);
+  transition: 0.3s;
+}
+.contact .container > div .send-message div label.active {
+  top: -5%;
+  background-color: var(--background-color2);
+}
+.contact .container > div .send-message textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px 15px;
+  outline: none;
+  border: 1px solid var(--ddd);
+  resize: none;
+  font-size: 18px;
+  background-color: transparent;
+  color: var(--fff);
+}
+.contact .container > div .send-message textarea::placeholder {
+  color: var(--fff);
+}
+.contact .container > div .send-message form > input:last-child {
+  background-color: var(--text-main-color);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+  padding: 10px 25px;
+  font-size: 20px;
+  color: var(--fff2);
+}
+.contact .container > div .social {
+  background-color: var(--text-main-color);
+  box-shadow: 1px 0 10px 0px #00000099;
+  position: relative;
+  width: 40%;
+}
+@media (max-width: 767px) {
+  .contact .container > div .social {
+    width: 100%;
+  }
+}
+.contact .container > div > .social > h2 {
+  color: var(--background-color2);
+}
+.contact .container > div .social div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+  width: 80%;
+}
+@media (max-width: 767px) {
+  .contact .container > div .social div {
+    position: static;
+    width: 100%;
+    transform: translateY(0);
+  }
+}
+.contact .container > div .social div a {
+  display: flex;
+  width: fit-content;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  transition: 0.3s;
+  color: var(--fff2);
+}
+.contact .container > div .social div a:hover {
+  color: var(--hover-color);
+}
+@media (max-width: 991px) {
+  .contact .container > div .social div a {
+    font-size: 17px;
+  }
+}
